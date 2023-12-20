@@ -1,0 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    padding: 2rem 0;
+    &__barra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include m.desktop { 
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__heading{
+        position: relative;
+        color: v.$colorDos;
+        font-size: 4rem;
+        @include m.tablet { 
+            margin-bottom: 5rem;
+        }
+        @include m.desktop { 
+            margin-bottom: 0;
+        }
+        &::after{
+            content: 'Compañia Familiar';
+            display: block;
+            font-size: 1.6rem;
+            font-family: v.$fuenteSecundaria;
+            font-weight: 300;
+            position: absolute;
+            border-top: 2px solid v.$colorDos;
+            bottom: -2.1rem;
+            right: auto;
+            @include m.tablet {
+                right: -4.8rem;
+            }
+        }
+        &--blanco{
+            color: v.$blanco;
+        }
+    }
+}

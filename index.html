@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Flor y Jardin</title>
+    <!-- font goolge -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700;900&family=Patua+One&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- stylessheet -->
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__barra contenedor">
+            <div class="header__logo">
+                <a href="index.html">
+                    <h2 class="header__heading" title="De Flor y Jardin">De Flor y Jardin</h2>
+                </a>
+            </div>
+            <nav class="navegacion">
+                <a href="index.html" class="navegacion__link" title="Inicio">Inicio</a>
+                <a href="#productos" class="navegacion__link" title="Productos">Productos</a>
+                <a href="#contacto" class="navegacion__link" title="Contacto">Contacto</a>
+                <a href="#categorias" class="navegacion__link" title="Contacto">Categorias</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slider contenedor seccion">
+        <!-- Additional required wrapper -->
+        <div class="slider__heading">
+            <h1 class="slider__nombre">Cambia la vibración de tu hogar y recupera un ambiente armonioso</h1>
+        </div>
+        <div class="slider__sombra"></div>
+        <div class="slider__contenedor">
+          <!-- Slides -->
+          <div class="slider__slide">
+            <picture>
+                <source srcset="build/img/header-4.webp" type="image/webp">
+                <img class="slider__img" loading="lazy" src="build/img/header-4.jpg" width="500" height="300" alt="imagen header">
+            </picture>
+          </div>
+          <div class="slider__slide">
+            <picture>
+                <source srcset="build/img/header-5.webp" type="image/webp">
+                <img class="slider__img" loading="lazy" src="build/img/header-5.jpg" width="500" height="300" alt="imagen header">
+            </picture>
+          </div>
+        </div> <!-- .swiper-wrapper -->
+    </div> <!-- .swiper -->
+
+    <section class="marca contenedor seccion">
+        <div class="marca__grid">
+            <div class="marca__imagen" data-aos="fade-up" data-aos-duration="500">
+                <h2 class="marca__heading">Revendedor Oficial de:</h2>
+                <div class="marca__flex">
+                    <img class="marca__img" src="build/img/sagrada-logo.svg" alt="logo sagrada madre" title="logo sagrada madre">
+                    <img class="marca__img marca__img--iluminarte" src="build/img/logo-iluminarte.png" alt="logo iluminarte" title="logo iluminarte">
+                </div>
+            </div>
+
+            <div class="marca__contenido" data-aos="fade-up" data-aos-duration="500">
+                <h3 class="marca__heading-dos">¿Por qué elegir Sagrada Madre?</h3>
+                <p class="marca__descripcion"><span class="negrita">Sagrada Madre</span> se enorgullece de ofrecer una amplia gama de productos elaborados con ingredientes naturales de <span class="negrita">alta calidad</span>, cuidadosamente seleccionados para garantizar la armonía con la naturaleza y el <span class="negrita">bienestar de sus clientes</span>. Sus inciensos, en particular, se han convertido en su sello distintivo.</p>
+                <p class="marca__descripcion">Los inciensos de Sagrada Madre son <span class="negrita">elaborados artesanalmente</span>, combinando <span class="negrita">hierbas, resinas y aceites esenciales</span> puros. Cada fragancia es cuidadosamente creada para proporcionar una <span class="negrita">experiencia aromática única y estimulante</span>, capaz de transportar los sentidos a un estado de <span class="negrita">calma y serenidad</span>. Estos inciensos son una invitación a conectar con la esencia de la naturaleza y encontrar momentos de paz.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="categorias contenedor seccion" id="categorias">
+        <h2 class="categorias__heading" title="¿Que producto buscas?">¿Que producto buscas?</h2>
+
+        <div class="categorias__grid">
+            <a href="bombas.html" class="icono">
+                <div class="icono__contenido" title="Bombas Defumacion">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Bombas Defumacion</h3>
+                </div>
+            </a> <!-- .icono -->
+
+            <a href="kits.html" class="icono">
+                <div class="icono__contenido" title="Kits">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Kits</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="perlas.html" class="icono">
+                <div class="icono__contenido" title="Perlas">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Perlas</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="polvo.html" class="icono">
+                <div class="icono__contenido" title="Sahumerio en polvo">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Sahumerio en Polvo</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="pastillas.html" class="icono">
+                <div class="icono__contenido" title="pastillas defumacion">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Pastillas Defumacion</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="hierbas.html" class="icono">
+                <div class="icono__contenido" title="hierbas en sobre">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Hierbas en Sobre</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="varillas.html" class="icono">
+                <div class="icono__contenido" title="Sahumerios Varillas">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Sahumerios en Varillas</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="solidos.html" class="icono">
+                <div class="icono__contenido" title="Sahumerios Solidos">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Sahumerios Solidos</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="#" class="icono">
+                <div class="icono__contenido" title="Conos">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Conos</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="aceites.html" class="icono">
+                <div class="icono__contenido" title="Aceites">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Aceites</h3>
+                </div>
+            </a><!-- .icono -->
+
+            <a href="accesorios.html" class="icono">
+                <div class="icono__contenido" title="Accesorios">
+                    <picture>
+                        <source srcset="build/img/icono_1.webp" type="image/webp">
+                        <img class="icono__img" loading="lazy" src="build/img/icono_1.png" width="500" height="300" alt="imagen icono">
+                    </picture>
+                    <h3 class="icono__nombre">Accesorios</h3>
+                </div>
+            </a><!-- .icono -->
+        </div><!-- .categorias__grid -->
+    </section> <!-- .categorias -->
+
+    <main class="productos seccion">
+        <h2 class="productos__heading" title="Lo mas vendido">Lo Mas Vendido</h2>
+
+        <div class="productos__grid contenedor" id="productos">
+
+            <div class="producto" title="Bombita defumacion activada siete elementos">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/activada2.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/activada2.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Bombita Defumacion Activada x 8 <span class="producto__nombre-span">Yagra - Canela</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Bombita Defumacion Activada Yagra - Canela^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Sahumerio triple combinado">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/combinado1.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/combinado1.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Sahumerios Triple <span class="producto__nombre-span"> Combinado</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Sahumerios Triple Combinado^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Bombita defumacion activada por 4 unidades siete poderes">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/completa1.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/completa1.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Bombita Defumacion Activada x 4 <span class="producto__nombre-span">Atrae Dinero</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Bombita Defumacion Activada 7 Poderes^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Sahumerio botanico calendula gardenias">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/botanico1.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/botanico1.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Sahumerios Botanicos <span class="producto__nombre-span">Calendula - Gardenias</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Sahumerios Botanicos Calendula - Gardenia^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Bomba carbon por veinticuatro unidades siete poderes">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/carbon3.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/carbon3.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Bomba Carbon x 24 U. <span class="producto__nombre-span">7 poderes</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Bomba Carbon x 24 Unidades 7 Poderes^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Sahumerio siete chakras">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/chakra1.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/chakra1.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Sahumerio 7 Chakras</h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Sahumerio 7 Chakras^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Sahumerio linea yagra rosa vainilla">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/yagra1.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/yagra1.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Sahumerio Linea Yagra <span class="producto__nombre-span">Rosa Vainilla</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Sahumerio Linea Yagra Rosa Vainilla^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Linea geometria sagrada">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/triangulo1.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/triangulo1.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Linea Geometria Sagrada <span class="producto__nombre-span">Rosa - Frankincense</span></h3>
+                    
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Linea Geometria Sagrada Rosa Frankincense^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+
+            <div class="producto" title="Hierbas en sobre">
+                <div class="producto__picture">
+                    <picture>
+                        <source srcset="build/img/sobre8.webp" type="image/webp">
+                        <img class="producto__img" loading="lazy" src="build/img/sobre8.jpg" width="500" height="300" alt="imagen producto">
+                    </picture>
+                </div>
+                <div class="producto__contenido">
+                    <h3 class="producto__nombre">Hierbas en Sobre <span class="producto__nombre-span">Manzanilla</span></h3>
+                    <div class="producto__precios">
+                        
+                        <!-- <p class="producto__precio producto__precio--modificado">$300</p> -->
+                    </div>
+                    <a class="producto__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola me interesa el ^Bombita Defumacion Activada Yagra - Canela^ de tu pagina web..."><i class="bi bi-whatsapp"></i>Hacé tu Pedido</a>
+                </div>
+            </div><!-- .producto -->
+        </div><!-- .productos__grid -->
+    </main>
+
+    <section class="proceso contenedor" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="proceso__contenido">
+            <h3 class="proceso__heading">Sahumerios a Base de Frutas</h3>
+            <p class="proceso__descripcion">La idea de crear un <span class="negrita">Sahumerio a base de frutas</span> nace en los valles de la Patagonia, Argentina.</p>
+            <p class="proceso__descripcion">Mas de <span class="negrita">100 toneladas anuales</span> de pulpa de fruta sobrante de la fabricación de jugos y derivados es secada al sol y transformada en una <span class="negrita">materia prima sustentable, por Jose de Biot.</span></p>
+            <p class="proceso__descripcion">Esta <span class="negrita">biomasa de aroma neutro</span>, la incorporamos como base de nuestros sahumerios.</p>
+            <p class="proceso__descripcion">En Sagrada Madre nos sumamos a esta corriente innovadora de <span class="negrita">suprareciclaje y upcycling</span>, en el reuso de los materiales, para disminuir nuestra huella ambiental.</p>
+        </div>
+    </section>
+
+    <footer class="footer" title="pie de pagina" id="contacto">
+        <div class="footer__grid contenedor">
+            <div class="footer__widget">
+                <div class="footer__logo">
+                    <a href="index.html">
+                        <h2 class="footer__nombre" title="De Flor y Jardin">De Flor y Jardin</h2>
+                    </a>
+                </div>
+            </div><!-- .footer__widget -->
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__descripcion">Si queres tener mas información sobre los productos que vendo enviame un mensaje por WhatsApp</p>
+                <a class="footer__enlace" href="https://api.whatsapp.com/send?phone=5493885833520&text=Hola Alfredo vi tu pagina web y me interesan los productos">
+                    <i class="bi bi-whatsapp">Alfredo Raul Baiud</i>
+                </a>
+            </div><!-- .footer__widget -->
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">¿Donde Ubicarnos?</h3>
+                <div class="footer__map">
+                    <iframe class="footer__iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d454.70207131394244!2d-65.2651012!3d-24.2551859!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1702166237061!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div><!-- .footer__widget -->
+        </div><!-- .footer__grid -->
+
+        <div class="footer__derechos">
+            <p class="footer__copy">Todos los derechos reservados. &copy; De Flor y Jardin</p>
+            <p class="footer__author">
+                Diseñado por <a href="#" class="footer__copy-enlace">Miguel Agustin Baiud</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@use 'variables' as v;
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-family: v.$fuentePrincipal;
+}
+h1,h2,h3{
+    font-family: v.$fuenteSecundaria;
+    margin: 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4.5rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+}
+.seccion{
+    padding: 5rem 0;
+}
+.bg-verde{
+    background-color: v.$colorDos;
+}
+.negrita{
+    font-weight: 700;
+}

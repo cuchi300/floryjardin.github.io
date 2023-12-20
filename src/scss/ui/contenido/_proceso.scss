@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.proceso{
+    background-image: unset;
+    @include m.desktop {
+        display: block;
+        min-height: 40rem;
+        background-image: url(../img/proceso-img.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 5rem;
+    }
+    &__contenido{
+        display: block;
+        text-align: center;
+        color: v.$colorTres;
+        @include m.desktop { 
+            display: none;
+        }
+    }
+    &__heading{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    &__descripcion{
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+}

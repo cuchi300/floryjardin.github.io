@@ -1,0 +1,58 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.slider{
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    &__heading{
+        position: absolute;
+        height: 100%;
+        z-index: 10;
+        color: v.$blanco;
+        width: 65%;
+        top: 7rem;
+        left: 4rem;
+        @include m.tablet { 
+            top: 10rem;
+        }
+        @include m.desktop { 
+            top: 20rem;
+        }
+    }
+    &__nombre{
+        font-size: 2.8rem;
+        @include m.tablet { 
+            font-size: 5rem;
+        }
+        @include m.desktop { 
+            font-size: 7rem;
+            top: 15rem;
+            left: 8rem;
+        }
+    }
+    &__sombra{
+        background-image: linear-gradient(to right, transparentize(v.$negro, .6) 0%, transparentize(v.$negro, .6) 100%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+    &__slide{
+        flex-shrink: 0;
+        width: 100%;
+        height: 17rem;
+        transition: transform;
+        position: relative;
+        @include m.tablet { 
+            height: 35rem;
+        }
+        @include m.desktop { 
+            height: 55rem;
+        }
+    }
+    &__img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
